@@ -9,18 +9,18 @@ pipeline {
     agent any 
 
     stages {
-        stage('Build') { 
+        stage('compile') { 
             steps { 
                 sh 'pwd' 
             }
         }
-        stage('Test'){
+        stage('install'){
             steps {
                 sh 'java -version'
                 
             }
         }
-        stage('Deploy') {
+        stage('test') {
             steps {
                 sh 'ls'
                 sh 'pwd'
