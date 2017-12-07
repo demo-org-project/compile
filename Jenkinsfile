@@ -14,6 +14,17 @@ pipeline {
                 sh 'pwd' 
             }
         }
-       
+        stage('Test'){
+            steps {
+                sh 'java -version'
+                
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'ls'
+                sh 'pwd'
+            }
+        }
     }
 }
